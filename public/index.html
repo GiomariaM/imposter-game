@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposter Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="game-header">
+            <h1>Imposter Game</h1>
+        </header>
+        
+        <div id="game-container">
+            <!-- Initial Screen -->
+            <div id="initial-screen" class="screen">
+                <div class="welcome-section">
+                    <p class="welcome-text">Welcome to the game of deception and discovery!</p>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="player-name" placeholder="Enter your name">
+                    </div>
+                    <button id="create-room-btn" class="primary-button">Create Room</button>
+                    <div class="join-section">
+                        <div class="input-wrapper">
+                            <input type="text" id="room-code-input" placeholder="Enter room code">
+                        </div>
+                        <button id="join-room-btn" class="primary-button">Join Room</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Screen -->
+            <div id="game-screen" class="screen hidden">
+                <div class="game-info">
+                    <div class="room-code-container">
+                        <p class="room-code-label">Room Code:</p>
+                        <p id="room-code-display"></p>
+                    </div>
+                    <div class="players-section">
+                        <h3>Players</h3>
+                        <ul id="players-list"></ul>
+                    </div>
+                </div>
+                
+                <div id="host-controls" class="hidden">
+                    <button id="start-game-btn" class="primary-button">Start Game</button>
+                    <button id="next-turn-btn" class="primary-button hidden">Next Turn</button>
+                </div>
+
+                <div id="game-status" class="hidden">
+                    <h2 id="word-display"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
