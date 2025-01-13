@@ -250,3 +250,31 @@ input:focus {
         box-shadow: none;
     }
 }
+
+.spectator-header {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 1rem;
+}
+
+.spectator {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.warning {
+    background-color: #dc3545;
+    margin-top: 2rem;
+}
+
+.warning:hover {
+    background-color: #bb2d3b;
+}
+
+#disconnect-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
