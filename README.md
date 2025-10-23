@@ -13,13 +13,13 @@ The Imposter Game is a lightweight full-stack application that manages player ro
 * **Word Distribution:** Assigns a secret word to all regular players while concealing it from the Imposter.
 * **Minimal Interface:** Clean design focused on essential game information.
 
-## Tech Stack
+## Tech
 
 This project is built using standard web technologies:
 
 * **Frontend:** HTML, CSS, and Vanilla JavaScript.
 * **Backend:** Node.js with the Express.js framework.
-* **Data:** Utilizes a `wordlist.json` file for game vocabulary.
+* **Data:** `wordlist.json` file for game vocabulary.
 
 ## Project Structure
 
